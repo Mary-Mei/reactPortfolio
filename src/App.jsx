@@ -1,10 +1,10 @@
-import React from 'react'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Who from './components/Who'
-import Works from './components/Works'
-import Contact from './components/Contact'
-import styled from 'styled-components'
+import React from 'react';
+import Contact from './components/Contact';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Who from './components/Who';
+import Works from './components/Works';
+import styled from 'styled-components';
 
 const Container = styled.div`
     height: 100vh;
@@ -15,20 +15,20 @@ const Container = styled.div`
     color: white;
     background: url("./img/bg.jpeg");
     &::-webkit-scrollbar{
-        display: none;
+        display:none;
     }
 `;
 
 const App = () => {
   return (
     <div>
-      <Container>
-          <Navbar />
-          <Hero />
-          <Who />
-          <Works />
-          <Contact />
-      </Container>
+        <Container>
+            <Hero />
+            <Who />
+            <Works />
+            <Contact />
+        </Container>
+        
     </div>
   )
 }
